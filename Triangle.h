@@ -53,7 +53,7 @@ public:
 		return dot(e2, cross(rayOrigin - a, e1)) / dot(e1, cross(rayDirection, e2));
 	}
 
-	// do some kickass phong shading
+	// do some kickass phong shading for a smoother shading effect
 	virtual vec3 getNormalAt(vec3 intersection) const {
 		// compute the interpolated normal at this point
 		return (float)w * normA + (float)u * normB + (float)v * normC;
