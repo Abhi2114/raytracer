@@ -5,9 +5,7 @@ Intersections supported for Planes, Spheres and Triangles. The barycentric co-or
 
 The recursion depth for computing reflections is currently set to 5, increase it at your own risk :)
 
-The render times can be greatly improved just by using some OpenMP directives to make use of all the cores on your machine. Would 
-really appreciate it if someone could help me port this to a CUDA runtime to make use of the GPU, since making CUDA work with C++ classes 
-is a real pain.
+The render times can be greatly improved just by using some OpenMP directives to make use of all the cores on your machine. I'm currently on my way to parallelize the raytracing process by using the CUDA toolkit across multiple nodes on the Palmetto Cluster at Clemson University.
 
 Following are some of the results I was able to produce with this implementation:
 
